@@ -2,7 +2,7 @@ import axios from 'axios'
 import {useNavigate } from "react-router-dom"
 import {useEffect ,useState } from  'react'
 import Nav from '../nav';
-import Footer from '../footer';
+import Footer from '../Footer';
 
 function GetBooks(){
    const navigate = useNavigate();

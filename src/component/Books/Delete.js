@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useNavigate } from "react-router-dom"
 import { useParams } from "react-router"
 import Nav from '../nav'
-import Footer from '../footer'
+import Footer from '../Footer'
 
 function DeleteBook() {
   let { id } = useParams()
