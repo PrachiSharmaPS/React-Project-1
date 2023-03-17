@@ -10,14 +10,14 @@ function GetBooks(){
 
  useEffect( ()=>{
   let token = localStorage.getItem('x-api-key')
-   axios.get(`http://localhost:8000/books` ,{headers:{ "Authorization":token}})
+   axios.get(`http://localhost:3001/books` ,{headers:{ "Authorization":token}})
     .then((res)=>{
         setListOfBook(res.data.data)
     }).catch((err)=>{
          alert(err.response.data.message  +" Error")
          navigate('/')
     })
- },[])
+ },[navigate])
 
  return(
     <>  

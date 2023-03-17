@@ -13,7 +13,7 @@ function UpdateBook() {
 
   const UpdatedBook = async function (event) {
     event.preventDefault();
-    let url = `http://localhost:8000/books/${id}`
+    let url = `http://localhost:3001/books/${id}`
     let token = localStorage.getItem('x-api-key')
 
     const config = {

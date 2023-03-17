@@ -3,8 +3,8 @@ import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom"
 
-function Regi() {
-    const [title, setTitle] = useState("")
+function Register() {
+    const [title] = useState("")
     const [phone, setPhone] = useState("")
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -16,7 +16,7 @@ function Regi() {
 
     const registerUser = async function (event) {
         event.preventDefault();
-        await axios.post("http://localhost:8000/register", {
+        await axios.post("http://localhost:3000/register", {
             title, phone, name, email, password, street, city, pincode
         }).then((res) => {
             alert(`${name} Your Acount Created Succesfully
@@ -52,4 +52,4 @@ function Regi() {
     )
 }
 
-export default Regi
+export default Register

@@ -17,7 +17,7 @@ function AddBook() {
 
   const createBook = async function (event) {
     event.preventDefault();
-    let url = "http://localhost:8000/books"
+    let url = "http://localhost:3001/books"
     let token = localStorage.getItem('x-api-key')
 
     const formData = new FormData();

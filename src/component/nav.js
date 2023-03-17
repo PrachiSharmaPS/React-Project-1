@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react"
 import {useNavigate } from "react-router-dom"
 
@@ -7,7 +8,7 @@ function Nav(){
     userId = localStorage.getItem('userId')
  useEffect(()=>{
     setUserId(userId)
- },[])
+ },[userId])
 
  function deleteItems() {
     // Clear localStorage items 
@@ -27,15 +28,7 @@ function Nav(){
                         <li className="nav-item active">
                             <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/Register">Create Acount</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/Login">Login</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/AddBook">Add Book</a>
-                        </li>
+                        
                     </ul>
                 </div>
                
